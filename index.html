@@ -3,42 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather-App</title>
+    <title>Snake Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="card">
-        <div class="search">
-            <input type="text" placeholder="Enter city name" spellcheck="false">
-            <button><img src="https://www.svgrepo.com/show/507850/search-alt.svg"></button>
+    <div class="gameover hide">
+         <div class="overscorebox over">Score:00</div>
+             <div class="overhighscorebox over">High Score:00</div>
+    </div>
+    <div class="game">
+        <div class="scoreboard">
+             <div class="scorebox">Score:00</div>
+             <div class="highscorebox">High Score:00</div>
         </div>
-        <div class="error">
-            <p>Invalid city name</p>
-        </div>
-        <div class="weather">
-            <img src="https://abhay-tomar03.github.io/Weather-App/icons/011-cloud.png" alt=""  class="weather-icon">
-            <h1 class="temp">22°c</h1>
-            <h2 class="city">New York</h2>
-            <div class="details">
-                <!-- ---humidity---- -->
-                <div class="col">
-                    <img src="https://cdn0.iconfinder.com/data/icons/weather-forecast-18/40/Precipitation_Humidity_Waves_Water_Weather_Forecast-128.png" alt="">
-                    <div>
-                        <p class="humidity">50%</p>
-                        <p>Humidity</p>
-                    </div>
-                </div>
-                <!-- ----wind---- -->
-                <div class="col">
-                    <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3235272/wind-icon-md.png" alt="">
-                    <div>
-                        <p class="wind">15 km/h</p>
-                        <p>Wind Speed</p>
-                    </div>
-                </div>
-            </div>
+        <div class="gameBord">
         </div>
     </div>
- <script src="script.js"></script>
 </body>
+<script src="script.js"></script>
 </html>
