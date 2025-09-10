@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.game{
+    width: 100vw;
+    height: 100vh;
+    background:#1A1A2E ;
+    display: flex;
+}
+.gameBord{
+   width:90vmin;
+height: 90vmin;
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18 , 1fr);
+    background-color: #000000; 
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://tse3.mm.bing.net/th/id/OIP.N3FgaJM7ri-bEf-QvJGwFQHaGW?pid=Api&P=0&h=180);}
+
+.snake{
+     background-color: rgb(220, 220, 155);
+    border-radius: 50%;
+    background:#ddff03;
+  
+}
+.head{
+    background-color: rgb(21, 21, 20);
+    border-radius: 50%;
+    scale: 1.2;
+    
+}
+.food{
+     background-color: #1ccf16;
+    border-radius: 10%;   
+}
+.head {
+  background: radial-gradient(circle, #66bb6a 40%, #2e7d32 90%);
+  border: 2px solid #1b5e20;
+  border-radius: 50%;
+  position: relative;
+  animation: headPulse 0.6s infinite alternate;
+}
+
+/* Eyes */
+.head::before,
+.head::after {
+  content: "";
+  position: absolute;
+  top: 25%;
+  width: 20%;
+  height: 20%;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+}
+
+.head::before {
+  left: 20%;
+}
+
+.head::after {
+  right: 20%;
+}
+
+/* Pupils */
+.head::before {
+  box-shadow: 5px 2px 0 black inset;
+}
+
+.head::after {
+  box-shadow: -5px 2px 0 black inset;
+}
+
+/* Little animation (breathing head) */
+@keyframes headPulse {
+  from { transform: scale(1); }
+  to   { transform: scale(1.1); }
+}
+.scoreboard{
+  height: 20vmin;
+  width: 11vw;
+  background: #16213E;
+  justify-content: center;
+  margin-right: 90px;
+  font-size: 1.6rem;
+  padding: 5rem;
+  color: #F9F871;
+  border-radius: 3rem;
+}
+.highscorebox{
+  margin-top: 2rem;
+}
+.gameover{
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/014/894/538/original/8-bit-pixel-text-game-over-background-icon-for-game-assets-in-illustrations-vector.jpg");
+}
+.gameover .over{
+  font-size: 4vmin;
+padding: 16vmin;
+}
+.gameover .over{
+  font-size: 4vmin;
+  padding: 16vmin;
+}
+.hide{
+  display: none;
+}
